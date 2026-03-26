@@ -4,7 +4,7 @@ Aqui está uma proposta de `README.md` profissional, clara e bem estruturada par
 
 ---
 
-# VRP Network Solver - Lisboa Case Study
+# VRP Network Solver - Case Study
 
 Este repositório contém uma solução personalizada para o **Problema de Roteirização de Veículos (VRP)** aplicada a uma rede viária real. O projeto utiliza uma biblioteca própria desenvolvida em Python, que integra o poder de otimização do **Google OR-Tools** com a manipulação de dados espaciais.
 
