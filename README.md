@@ -55,17 +55,10 @@ pip install ortools networkx pandas geopandas matplotlib shapely
 
 Abaixo, uma representação das rotas calculadas sobre a malha de Lisboa:
 
-![Roteirização em Lisboa](roteirizacao.jpg)
+![Roteirização em Lisboa](roteirizacao.jpeg)
 
 ## 👤 Autor
 
 **Fábio Emanuel de Souza Morais**
 *Mestre em Engenharia de Transportes (USP) | Engenheiro Aeronáutico (ITA)*
 
----
-
-### Dicas para o seu GitHub:
-1.  **Imagens:** Certifique-se de que o arquivo `roteirizacao.jpg` esteja na raiz do repositório para que ele apareça corretamente no README.
-2.  **Licença:** Se pretender deixar o código aberto, considere adicionar um arquivo de `LICENSE` (como MIT).
-
-Gostaria que eu fizesse alguma alteração específica na descrição técnica da `vrpnetwork.py` ou adicionasse mais detalhes sobre os algoritmos usados?
