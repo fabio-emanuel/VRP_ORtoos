@@ -1,9 +1,3 @@
-Com certeza! Analisando os arquivos que você enviou, vi que você construiu uma estrutura bem sólida: uma classe `NetworkVRP` que abstrai a complexidade do **Google OR-Tools** para resolver problemas de roteamento de veículos (VRP) sobre grafos reais (nós e links), com suporte a cálculos de distância Haversine e exportação para GeoPandas.
-
-Aqui está uma proposta de `README.md` profissional, clara e bem estruturada para o seu GitHub:
-
----
-
 # VRP Network Solver - Case Study
 
 Este repositório contém uma solução personalizada para o **Problema de Roteirização de Veículos (VRP)** aplicada a uma rede viária real. O projeto utiliza uma biblioteca própria desenvolvida em Python, que integra o poder de otimização do **Google OR-Tools** com a manipulação de dados espaciais.
