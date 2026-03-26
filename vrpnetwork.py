@@ -10,7 +10,7 @@ from ortools.constraint_solver import pywrapcp, routing_enums_pb2
 def invertecoords(lista):
     lista2 = []
     for coord in lista:
-        temp = (coord[1],coord[0])
+        temp = (coord[1]*1000000,coord[0]*1000000)
         lista2.append(temp)
     return lista2
 
@@ -212,8 +212,10 @@ class Network:
             crs="EPSG:4326"
         )
 
+        
         # Exportar para o arquivo shapefile
         gdf.to_file(output_file, driver='ESRI Shapefile')
+        gdf.to_csv(output_file+'.csv', index=False)
 
         print(f"Caminho mínimo exportado para {output_file} com projeção EPSG:4326")
         
@@ -353,7 +355,7 @@ class NetworkVRP(Network):
                         })
         # Coordenada do ponto (longitude, latitude)
         coord = self.graph.nodes[id_inicial]['pos']
-        geometries.append(Point(coord[1],coord[0]))
+        geometries.append(Point(coord[1]*1000000,coord[0]*1000000))
 
         for i, point in enumerate(customers):
             id = customers[i][1]
@@ -368,10 +370,11 @@ class NetworkVRP(Network):
                             'links': links[i]
                           })
             coord = self.graph.nodes[id]['pos']
-            geometries.append(Point(coord[1],coord[0]))
+            geometries.append(Point(coord[1]*1000000,coord[0]*1000000))
 
          # Criar um GeoDataFrame com as geometrias e atributos
         gdf = gpd.GeoDataFrame(dados, geometry=geometries, crs="EPSG:4326")
 
         # Exportar o GeoDataFrame para um shapefile
-        gdf.to_file(arquivo, driver='ESRI Shapefile')    
+        gdf.to_file(arquivo, driver='ESRI Shapefile')
+        gdf.to_csv(arquivo+'.csv', index=False)
