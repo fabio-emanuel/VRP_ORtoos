@@ -76,7 +76,7 @@ pip install ortools networkx pandas geopandas matplotlib shapely
     ```python
     from vrpnetwork import NetworkVRP
     network = NetworkVRP()
-    network.load_data("nodes_lis2.csv", "links_lis2.csv")
+    network.load_data("nodes.csv", "links.csv")
     ```
 
 2.  **Defina os pontos de demanda:**
