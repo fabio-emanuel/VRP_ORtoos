@@ -2,7 +2,7 @@
 
 Este repositório contém uma solução personalizada para o **Problema de Roteirização de Veículos (VRP)** aplicada a uma rede viária real. O projeto utiliza uma biblioteca própria desenvolvida em Python, que integra o poder de otimização do **Google OR-Tools** com a manipulação de dados espaciais.
 
-O exemplo contido no notebook utiliza a rede de transporte de **Lisboa** para demonstrar a criação de rotas otimizadas entre diferentes pontos (nós) da cidade.
+O exemplo contido no notebook utiliza a rede de transporte para demonstrar a criação de rotas otimizadas entre diferentes pontos (nós) da cidade.
 
 ## 🧠 Lógica do Algoritmo (solve_vrp)
 
@@ -58,8 +58,8 @@ FIM ALGORITMO
 ## 📂 Estrutura do Projeto
 
 * `vrpnetwork.py`: A biblioteca principal. Contém a classe `NetworkVRP` que gerencia a rede, calcula as matrizes e invoca o solver do OR-Tools.
-* `VRP_LIS.ipynb`: Notebook demonstrativo que carrega os dados de Lisboa, configura os parâmetros de roteirização e exibe os resultados.
-* `nodes_lis2.csv` / `links_lis2.csv`: Base de dados da rede viária de Lisboa (necessários para rodar o exemplo).
+* `VRP.ipynb`: Notebook demonstrativo que carrega os dados de Lisboa, configura os parâmetros de roteirização e exibe os resultados.
+* `nodes.csv` / `links.csv`: Base de dados da rede viária de Lisboa (necessários para rodar o exemplo).
 * `roteirizacao.jpg`: Exemplo visual do output das rotas otimizadas.
 
 ## 🛠️ Pré-requisitos
