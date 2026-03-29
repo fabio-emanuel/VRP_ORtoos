@@ -92,7 +92,7 @@ pip install ortools networkx pandas geopandas matplotlib shapely
 
 Abaixo, uma representação das rotas calculadas sobre a malha de Lisboa:
 
-![Roteirização em Lisboa](roteirizacao.jpeg)
+![Roteirização](roteirizacao.jpeg)
 
 ## 👤 Autor
 
